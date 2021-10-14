@@ -1,0 +1,160 @@
+@import "../scss/colors";
+@import "../scss/typo";
+
+#container {
+  height: 100%;
+  overflow: hidden;
+  background: $background-color-primary;
+
+  #bigTitle_img {
+    margin-top: 50px;
+  }
+
+  #right_img img {
+    width: 360px;
+    height: 400px;
+  }
+
+  #homeTitle {
+    span {
+      font-size: $fontSize-big;
+      color: $primary-color;
+    }
+
+
+    #searchInput {
+      border-color: $primary-color;
+      border-style: solid;
+      border-radius: 5px;
+      padding: 10px 20px;
+      width: 400px;
+      font-size: 20px;
+      background-color: transparent;
+      outline: none;
+      color: $primary-color;
+      position: relative;
+
+      &::placeholder {
+        color: $primary-color;
+      }
+
+      &:hover {
+        border-width: 3px;
+      }
+    }
+
+    #searchButton {
+      width: 160px;
+      margin-left: 10px;
+      background-color: transparent;
+      border-style: solid;
+      border-radius: 5px;
+      outline: none;
+      color: $primary-color;
+      font-size: 20px;
+      padding: 10px 20px;
+      border-color: $primary-color;
+      letter-spacing: 1.5px;
+
+      &:disabled{
+        background-color: $disabled-color;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        background: url("../../assets/search-solid.svg") no-repeat;
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin-left: 5px;
+        margin-top: 4px;
+      }
+
+      &:hover {
+        border-width: 3px;
+      }
+    }
+
+  }
+
+  #homeTitle:before {
+    content: "";
+    display: block;
+    background: url("../../assets/heart_regular.svg") no-repeat;
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 0px 10px 0px -19px;
+  }
+
+  #gif-row {
+    .gif {
+      width: 200px;
+      height: 150px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    //#shareButton-container {
+    //  width: 200px;
+    //  border-top: none;
+    //  border-bottom-left-radius: 5px;
+    //  border-bottom-right-radius: 5px;
+    //  background-color: $primary-color;
+    //  padding: 5px;
+    //
+    //  &:hover{
+    //    background-color: darken($primary-color,10) ;
+    //  }
+    //
+    //  #shareButton {
+    //    width: 90px;
+    //    color: black;
+    //    background-color: transparent;
+    //    outline: none;
+    //    border: none;
+    //    letter-spacing: 3px;
+    //
+    //    &:after {
+    //      content: "";
+    //      display: block;
+    //      background: url("../../assets/whatsapp-brands.svg") no-repeat;
+    //      width: 20px;
+    //      height: 20px;
+    //      float: right;
+    //      //margin-left: 5px;
+    //      margin-top: 2px;
+    //    }
+    //  }
+    //
+    //
+    //
+    //
+    //}
+    #shareButton {
+      width: 200px;
+      height: 40px;
+      color: black;
+      background-color: $primary-color;
+      outline: none;
+      border: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      letter-spacing: 3px;
+
+      &:hover{
+        background-color: darken($primary-color,20);
+      }
+
+      &:after {
+        content: "";
+        display: inline-block;
+        background: url("../../assets/whatsapp-brands.svg") no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+      }
+    }
+  }
+}

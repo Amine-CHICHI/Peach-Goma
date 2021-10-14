@@ -1,0 +1,102 @@
+#container {
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+#container #bigTitle_img {
+  margin-top: 50px;
+}
+#container #right_img img {
+  width: 360px;
+  height: 400px;
+}
+#container #homeTitle span {
+  font-size: 60px;
+  color: #F5F5F5;
+}
+#container #homeTitle #searchInput {
+  border-color: #F5F5F5;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 400px;
+  font-size: 20px;
+  background-color: transparent;
+  outline: none;
+  color: #F5F5F5;
+  position: relative;
+}
+#container #homeTitle #searchInput::placeholder {
+  color: #F5F5F5;
+}
+#container #homeTitle #searchInput:hover {
+  border-width: 3px;
+}
+#container #homeTitle #searchButton {
+  width: 160px;
+  margin-left: 10px;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 5px;
+  outline: none;
+  color: #F5F5F5;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-color: #F5F5F5;
+  letter-spacing: 1.5px;
+}
+#container #homeTitle #searchButton:disabled {
+  background-color: #FF033E;
+}
+#container #homeTitle #searchButton:after {
+  content: "";
+  display: block;
+  background: url("../../assets/search-solid.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+#container #homeTitle #searchButton:hover {
+  border-width: 3px;
+}
+#container #homeTitle:before {
+  content: "";
+  display: block;
+  background: url("../../assets/heart_regular.svg") no-repeat;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: 0px 10px 0px -19px;
+}
+#container #gif-row .gif {
+  width: 200px;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#container #gif-row #shareButton {
+  width: 200px;
+  height: 40px;
+  color: black;
+  background-color: #F5F5F5;
+  outline: none;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  letter-spacing: 3px;
+}
+#container #gif-row #shareButton:hover {
+  background-color: #c2c2c2;
+}
+#container #gif-row #shareButton:after {
+  content: "";
+  display: inline-block;
+  background: url("../../assets/whatsapp-brands.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=home-page.component.css.map */
